@@ -1,35 +1,33 @@
-// Faça um programa que receba quatronúmeros inteiros, calcule e mostre a soma desses números
 #include <stdlib.h>
 #include <stdio.h>
 
-// Função principal do programa
-int main(int argc, char const *argv[])
-{
-    // Declaração das variáveis de notas e média final
-    float nota1, nota2, nota3, nota4, mediafinal;
+int main() {
+    // Declaração das variáveis para as notas e para a soma e média
+    float nota1, nota2, nota3, nota4;
+    float soma, media;
 
-    // Solicitação e leitura da nota 1
+    // Solicitação e leitura das quatro notas
     printf("Informe a nota 1:\n");
     scanf("%f", &nota1);
 
-    // Solicitação e leitura da nota 2
     printf("Informe a nota 2:\n");
     scanf("%f", &nota2);
 
-    // Solicitação e leitura da nota 3
     printf("Informe a nota 3:\n");
     scanf("%f", &nota3);
 
-    // Solicitação e leitura da nota 4
     printf("Informe a nota 4:\n");
     scanf("%f", &nota4);
 
-    // Cálculo da média final
-    mediafinal = (nota1 + nota2 + nota3 + nota4) / 4;
+    // Cálculo da soma das notas
+    soma = nota1 + nota2 + nota3 + nota4;
 
-    // Exibição da média final com duas casas decimais
-    printf("Sua média final é: %.2f\n", mediafinal);
+    // Cálculo da média das notas
+    media = soma / 4;
 
-    // Indicação de término bem-sucedido do programa
+    // Exibição da soma e média
+    printf("A soma das notas é: %.2f\n", soma);
+    printf("A média das notas é: %.2f\n", media);
+
     return 0;
 }
